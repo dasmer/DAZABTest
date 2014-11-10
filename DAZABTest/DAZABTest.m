@@ -21,9 +21,7 @@ static dispatch_once_t srand48OnceToken;
     NSString *userDefaultsKeyName = [self userDefaultsKeyForTestWithName:name];
     id value = [[NSUserDefaults standardUserDefaults] objectForKey:userDefaultsKeyName];
     if (!value) {
-        dispatch_once(&srand48OnceToken, ^{
-            srand48(time(0));
-        });
+        [self seedRandomGenerator];
         NSArray *values = [conditions allKeys];
         NSArray *cumulativeWeights = [self cumulativeWeightsForValues:values inConditions:conditions];
         CGFloat sumOfWeights = [[cumulativeWeights lastObject] floatValue];
@@ -46,6 +44,13 @@ static dispatch_once_t srand48OnceToken;
 
 
 #pragma mark - Private Helper Methods
+
++ (void)seedRandomGenerator
+{
+    dispatch_once(&srand48OnceToken, ^{
+        srand48(time(0));
+    });
+}
 
 + (NSString *)userDefaultsKeyForTestWithName:(NSString *)testName
 {
