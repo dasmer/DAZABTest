@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A3AEE2E1A116B5300EED033 /* DAZABTest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A3AEE2D1A116B5300EED033 /* DAZABTest.h */; };
+		3A3AEE301A116B5300EED033 /* DAZABTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEE2F1A116B5300EED033 /* DAZABTest.m */; };
+		3A3AEE361A116B5300EED033 /* libDAZABTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3AEE2A1A116B5300EED033 /* libDAZABTest.a */; };
+		3A3AEE451A116FC700EED033 /* DAZABTestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEE441A116FC700EED033 /* DAZABTestSpec.m */; };
+		78C49571A4E01B681AE94E43 /* libPods-DAZABTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E805F4B40A8C4DECEF875C3 /* libPods-DAZABTestTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A3AEE371A116B5300EED033 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A3AEE221A116B5200EED033 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A3AEE291A116B5200EED033;
+			remoteInfo = DAZABTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A3AEE281A116B5200EED033 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				3A3AEE2E1A116B5300EED033 /* DAZABTest.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A3AEE2A1A116B5300EED033 /* libDAZABTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDAZABTest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3AEE2D1A116B5300EED033 /* DAZABTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAZABTest.h; sourceTree = "<group>"; };
+		3A3AEE2F1A116B5300EED033 /* DAZABTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAZABTest.m; sourceTree = "<group>"; };
+		3A3AEE351A116B5300EED033 /* DAZABTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DAZABTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3AEE3B1A116B5300EED033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3AEE441A116FC700EED033 /* DAZABTestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAZABTestSpec.m; sourceTree = "<group>"; };
+		7BD1EDBEC70BD7D3EADFE7E4 /* Pods-DAZABTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAZABTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DAZABTestTests/Pods-DAZABTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E805F4B40A8C4DECEF875C3 /* libPods-DAZABTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DAZABTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFC5EE9730BAB88CE2A3594 /* Pods-DAZABTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAZABTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DAZABTestTests/Pods-DAZABTestTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A3AEE271A116B5200EED033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3AEE321A116B5300EED033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3AEE361A116B5300EED033 /* libDAZABTest.a in Frameworks */,
+				78C49571A4E01B681AE94E43 /* libPods-DAZABTestTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2671E5CE474ED813481EC283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E805F4B40A8C4DECEF875C3 /* libPods-DAZABTestTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A3AEE211A116B5200EED033 = {
+			isa = PBXGroup;
+			children = (
+				3A3AEE2C1A116B5300EED033 /* DAZABTest */,
+				3A3AEE391A116B5300EED033 /* DAZABTestTests */,
+				3A3AEE2B1A116B5300EED033 /* Products */,
+				E4EBBD836E4D7BED06A7097E /* Pods */,
+				2671E5CE474ED813481EC283 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A3AEE2B1A116B5300EED033 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A3AEE2A1A116B5300EED033 /* libDAZABTest.a */,
+				3A3AEE351A116B5300EED033 /* DAZABTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A3AEE2C1A116B5300EED033 /* DAZABTest */ = {
+			isa = PBXGroup;
+			children = (
+				3A3AEE2D1A116B5300EED033 /* DAZABTest.h */,
+				3A3AEE2F1A116B5300EED033 /* DAZABTest.m */,
+			);
+			path = DAZABTest;
+			sourceTree = "<group>";
+		};
+		3A3AEE391A116B5300EED033 /* DAZABTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A3AEE441A116FC700EED033 /* DAZABTestSpec.m */,
+				3A3AEE3A1A116B5300EED033 /* Supporting Files */,
+			);
+			path = DAZABTestTests;
+			sourceTree = "<group>";
+		};
+		3A3AEE3A1A116B5300EED033 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A3AEE3B1A116B5300EED033 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4EBBD836E4D7BED06A7097E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BD1EDBEC70BD7D3EADFE7E4 /* Pods-DAZABTestTests.debug.xcconfig */,
+				FCFC5EE9730BAB88CE2A3594 /* Pods-DAZABTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A3AEE291A116B5200EED033 /* DAZABTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3AEE3E1A116B5300EED033 /* Build configuration list for PBXNativeTarget "DAZABTest" */;
+			buildPhases = (
+				3A3AEE261A116B5200EED033 /* Sources */,
+				3A3AEE271A116B5200EED033 /* Frameworks */,
+				3A3AEE281A116B5200EED033 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DAZABTest;
+			productName = DAZABTest;
+			productReference = 3A3AEE2A1A116B5300EED033 /* libDAZABTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3A3AEE341A116B5300EED033 /* DAZABTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3AEE411A116B5300EED033 /* Build configuration list for PBXNativeTarget "DAZABTestTests" */;
+			buildPhases = (
+				081E8AC6F72BB685EE42FB6C /* Check Pods Manifest.lock */,
+				3A3AEE311A116B5300EED033 /* Sources */,
+				3A3AEE321A116B5300EED033 /* Frameworks */,
+				3A3AEE331A116B5300EED033 /* Resources */,
+				2DBF1DAA0E4D700A4FC4F4C6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A3AEE381A116B5300EED033 /* PBXTargetDependency */,
+			);
+			name = DAZABTestTests;
+			productName = DAZABTestTests;
+			productReference = 3A3AEE351A116B5300EED033 /* DAZABTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A3AEE221A116B5200EED033 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Dasmer Singh";
+				TargetAttributes = {
+					3A3AEE291A116B5200EED033 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					3A3AEE341A116B5300EED033 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 3A3AEE251A116B5200EED033 /* Build configuration list for PBXProject "DAZABTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3A3AEE211A116B5200EED033;
+			productRefGroup = 3A3AEE2B1A116B5300EED033 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A3AEE291A116B5200EED033 /* DAZABTest */,
+				3A3AEE341A116B5300EED033 /* DAZABTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A3AEE331A116B5300EED033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		081E8AC6F72BB685EE42FB6C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2DBF1DAA0E4D700A4FC4F4C6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DAZABTestTests/Pods-DAZABTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A3AEE261A116B5200EED033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3AEE301A116B5300EED033 /* DAZABTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3AEE311A116B5300EED033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3AEE451A116FC700EED033 /* DAZABTestSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A3AEE381A116B5300EED033 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A3AEE291A116B5200EED033 /* DAZABTest */;
+			targetProxy = 3A3AEE371A116B5300EED033 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3A3AEE3C1A116B5300EED033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A3AEE3D1A116B5300EED033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A3AEE3F1A116B5300EED033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3A3AEE401A116B5300EED033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3A3AEE421A116B5300EED033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD1EDBEC70BD7D3EADFE7E4 /* Pods-DAZABTestTests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DAZABTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A3AEE431A116B5300EED033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFC5EE9730BAB88CE2A3594 /* Pods-DAZABTestTests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DAZABTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A3AEE251A116B5200EED033 /* Build configuration list for PBXProject "DAZABTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3AEE3C1A116B5300EED033 /* Debug */,
+				3A3AEE3D1A116B5300EED033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3AEE3E1A116B5300EED033 /* Build configuration list for PBXNativeTarget "DAZABTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3AEE3F1A116B5300EED033 /* Debug */,
+				3A3AEE401A116B5300EED033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3AEE411A116B5300EED033 /* Build configuration list for PBXNativeTarget "DAZABTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3AEE421A116B5300EED033 /* Debug */,
+				3A3AEE431A116B5300EED033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A3AEE221A116B5200EED033 /* Project object */;
+}
