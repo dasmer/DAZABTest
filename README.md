@@ -19,17 +19,17 @@ Usage
 
 ### Split-test with equal weights
 ```objective-c
-    NSString *buttonText = [DAZABTest splitTestWithName:@"SampleEqualWeightTestName" values:@[@"Log In", @"Sign In", @"Submit", @"Confirm"]];
+NSString *buttonText = [DAZABTest splitTestWithName:@"SampleEqualWeightTestName" values:@[@"Log In", @"Sign In", @"Submit", @"Confirm"]];
 ```
 
 ### Split-test with unequal weights
 ```objective-c
-    NSDictionary *conditions = @{[UIColor redColor]: @(0.30),
-                                 [UIColor blueColor]:  @(0.25),
-                                 [UIColor yellowColor]:  @(0.25),
-                                 [UIColor greenColor]:  @(0.20),
-                                 };
-    UIColor *buttonColor = [DAZABTest splitTestWithName:@"SampleUnequalWeightTestName" conditions:conditions];
+NSDictionary *conditions = @{[UIColor redColor]: @(0.30),
+                             [UIColor blueColor]:  @(0.25),
+                             [UIColor yellowColor]:  @(0.25),
+                             [UIColor greenColor]:  @(0.20),
+                             };
+UIColor *buttonColor = [DAZABTest splitTestWithName:@"SampleUnequalWeightTestName" conditions:conditions];
 ```
 
 Acknowledgement
@@ -40,6 +40,6 @@ This library was inspired by [SkyLab](https://github.com/mattt/SkyLab) in an eff
 Contributing
 ------------
 
-We'd love to see your ideas for improving this library! The best way to contribute is by submitting a pull request. We'll do our best to respond to your patch as soon as possible. You can also submit a [new Github issue](https://github.com/dasmer/DAZABTest/issues/new) if you find bugs or have questions. :octocat:
+We'd love to see your ideas for improving this library! The best way to contribute is by submitting a pull request. We'll do our best to respond to your patch as soon as possible. You can also submit a [new GitHub issue](https://github.com/dasmer/DAZABTest/issues/new) if you find bugs or have questions. :octocat:
 
 Please make sure to follow our general coding style and add test coverage for new features!
