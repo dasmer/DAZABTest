@@ -26,9 +26,9 @@ NSString *buttonText = [DAZABTest splitTestWithName:@"SampleEqualWeightTestName"
 ### Split-test with unequal weights
 ```objective-c
 NSDictionary *conditions = @{[UIColor redColor]: @(0.30),
-                             [UIColor blueColor]:  @(0.25),
-                             [UIColor yellowColor]:  @(0.25),
-                             [UIColor greenColor]:  @(0.20),
+                             [UIColor blueColor]: @(0.25),
+                             [UIColor yellowColor]: @(0.25),
+                             [UIColor greenColor]: @(0.20),
                              };
 UIColor *buttonColor = [DAZABTest splitTestWithName:@"SampleUnequalWeightTestName"
 										 conditions:conditions];
