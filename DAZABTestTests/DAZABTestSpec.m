@@ -4,6 +4,9 @@
 #import <UIKit/UIKit.h>
 #import <Specta/Specta.h>
 #import <Expecta/Expecta.h>
+#import "DAZMathHelper.h"
+
+static const CGFloat DAZABTestSpecTValue = 3.1; // Assuming a t-distrubtion, error < 0.1% for large n.
 
 SpecBegin(DAZABTest)
 
@@ -44,19 +47,26 @@ describe(@"splitTestWithName:conditions:", ^{
                 [blueArray addObject:testName];
             }
         }
-        CGFloat confidenceIntervalTolerance = (1 - 0.95) * numberOfSplitTests;
-
+        CGFloat redConfidenceIntervalTolerance = [DAZMathHelper confidenceIntervalForBinomialDistributionWithTValue:DAZABTestSpecTValue
+                                                                                                        probability:prRed
+                                                                                                      numberOfTests:numberOfSplitTests];
         CGFloat redExpectedCount = prRed * numberOfSplitTests;
-        expect([redArray count]).to.beInTheRangeOf(redExpectedCount - confidenceIntervalTolerance,
-                                                   redExpectedCount + confidenceIntervalTolerance);
+        expect([redArray count]).to.beInTheRangeOf(redExpectedCount - redConfidenceIntervalTolerance,
+                                                   redExpectedCount + redConfidenceIntervalTolerance);
 
+        CGFloat greenConfidenceIntervalTolerance = [DAZMathHelper confidenceIntervalForBinomialDistributionWithTValue:DAZABTestSpecTValue
+                                                                                                        probability:prGreen
+                                                                                                      numberOfTests:numberOfSplitTests];
         CGFloat greenExpectedCount = prGreen * numberOfSplitTests;
-        expect([greenArray count]).to.beInTheRangeOf(greenExpectedCount - confidenceIntervalTolerance,
-                                                     greenExpectedCount + confidenceIntervalTolerance);
+        expect([greenArray count]).to.beInTheRangeOf(greenExpectedCount - greenConfidenceIntervalTolerance,
+                                                     greenExpectedCount + greenConfidenceIntervalTolerance);
 
+        CGFloat blueConfidenceIntervalTolerance = [DAZMathHelper confidenceIntervalForBinomialDistributionWithTValue:DAZABTestSpecTValue
+                                                                                                        probability:prBlue
+                                                                                                      numberOfTests:numberOfSplitTests];
         CGFloat blueExpectedCount = prBlue * numberOfSplitTests;
-        expect([blueArray count]).to.beInTheRangeOf(blueExpectedCount - confidenceIntervalTolerance,
-                                                    blueExpectedCount + confidenceIntervalTolerance);
+        expect([blueArray count]).to.beInTheRangeOf(blueExpectedCount - blueConfidenceIntervalTolerance,
+                                                    blueExpectedCount + blueConfidenceIntervalTolerance);
     });
 
     it(@"should persist result after the first test", ^{
@@ -109,14 +119,17 @@ describe(@"splitTestWithName:values:", ^{
                 [blueArray addObject:testName];
             }
         }
-        CGFloat confidenceIntervalTolerance = (1 - 0.95) * numberOfSplitTests;
-        CGFloat expectedColorCount = (1.0 / 3.0) * numberOfSplitTests;
-        expect([redArray count]).to.beInTheRangeOf(expectedColorCount - confidenceIntervalTolerance,
-                                                   expectedColorCount + confidenceIntervalTolerance);
-        expect([greenArray count]).to.beInTheRangeOf(expectedColorCount - confidenceIntervalTolerance,
-                                                     expectedColorCount + confidenceIntervalTolerance);
-        expect([blueArray count]).to.beInTheRangeOf(expectedColorCount - confidenceIntervalTolerance,
-                                                    expectedColorCount + confidenceIntervalTolerance);
+
+        CGFloat prColor = (1.0 / 3.0);
+        CGFloat colorConfidenceIntervalTolerance = [DAZMathHelper confidenceIntervalForBinomialDistributionWithTValue:DAZABTestSpecTValue
+                                                                                                          probability:prColor
+                                                                                                        numberOfTests:numberOfSplitTests];
+        CGFloat colorExpectedCount = prColor * numberOfSplitTests;
+        CGFloat rangeLowerBound = colorExpectedCount - colorConfidenceIntervalTolerance;
+        CGFloat rangeUpperBound = colorExpectedCount + colorConfidenceIntervalTolerance;
+        expect([redArray count]).to.beInTheRangeOf(rangeLowerBound, rangeUpperBound);
+        expect([greenArray count]).to.beInTheRangeOf(rangeLowerBound, rangeUpperBound);
+        expect([blueArray count]).to.beInTheRangeOf(rangeLowerBound, rangeUpperBound);
     });
 });
 
