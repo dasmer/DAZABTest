@@ -19,7 +19,8 @@ Usage
 
 ### Split-test with equal weights
 ```objective-c
-NSString *buttonText = [DAZABTest splitTestWithName:@"SampleEqualWeightTestName" values:@[@"Log In", @"Sign In", @"Submit", @"Confirm"]];
+NSString *buttonText = [DAZABTest splitTestWithName:@"SampleEqualWeightTestName"
+											 values:@[@"Log In", @"Sign In", @"Submit", @"Confirm"]];
 ```
 
 ### Split-test with unequal weights
@@ -29,7 +30,8 @@ NSDictionary *conditions = @{[UIColor redColor]: @(0.30),
                              [UIColor yellowColor]:  @(0.25),
                              [UIColor greenColor]:  @(0.20),
                              };
-UIColor *buttonColor = [DAZABTest splitTestWithName:@"SampleUnequalWeightTestName" conditions:conditions];
+UIColor *buttonColor = [DAZABTest splitTestWithName:@"SampleUnequalWeightTestName"
+										 conditions:conditions];
 ```
 
 Acknowledgement
