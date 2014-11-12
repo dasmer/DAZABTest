@@ -1,0 +1,5 @@
+coverage_service: coveralls
+xcodeproj: DAZABTest.xcodeproj
+source_directory: DAZABTest
+ignore:
+  - "*/Pods/*"
