@@ -1,6 +1,7 @@
 DAZABTest
 =========
 [![Build Status](https://travis-ci.org/dasmer/DAZABTest.svg?branch=master)](https://travis-ci.org/dasmer/DAZABTest)
+[![Coverage Status](https://coveralls.io/repos/dasmer/DAZABTest/badge.png)](https://coveralls.io/r/dasmer/DAZABTest)
 
 DAZABTest is a simple split-testing framework with a synchronous API.
 

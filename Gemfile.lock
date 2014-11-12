@@ -1,0 +1,26 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (3.2.20)
+      i18n (~> 0.6, >= 0.6.4)
+      multi_json (~> 1.0)
+    clamp (0.6.3)
+    colored (1.2)
+    i18n (0.6.11)
+    mini_portile (0.6.1)
+    multi_json (1.10.1)
+    nokogiri (1.6.4.1)
+      mini_portile (~> 0.6.0)
+    slather (1.5.1)
+      clamp (~> 0.6)
+      nokogiri (~> 1.6.3)
+      xcodeproj (~> 0.19.2)
+    xcodeproj (0.19.4)
+      activesupport (~> 3.0)
+      colored (~> 1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  slather
